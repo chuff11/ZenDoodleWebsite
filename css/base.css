@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css?family=Kalam|Marck+Script|ZCOOL+KuaiLe");
+html {
+  margin: 0 8.33%;
+  padding: 0;
+  background-image: url("../assets/zendoodle-bg.png");
+  background-color: lavender;
+}
+body {
+  margin-top: 0;
+  padding-top: 0;
+  background-image: url("../assets/body-bg.png");
+  border: 2px solid black;
+}
+a {
+  text-decoration: none;
+}
+#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url("../assets/zendoodle-bg.png");
+  background-color: darkslateblue;
+  border: 2px solid black;
+  margin: 0;
+}
+#nav ul {
+  padding: 0;
+  margin: 0;
+}
+#nav li {
+  display: inline-block;
+  list-style-type: none;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0.5em 0.5em;
+  margin: 0;
+  margin-right: 0;
+  text-align: center;
+  font-family: "Kalam", cursive;
+}
+#nav li:hover {
+  background-color: lavender;
+  cursor: pointer;
+}
+#nav li:active {
+  color: darkmagenta;
+}
+img {
+  padding: 0;
+  max-width: 100%;
+  min-width: 150px;
+  height: auto;
+}
+blockquote {
+  margin: 0 8%;
+  width: 70%;
+  border: 3px double black;
+  border-radius: 10px;
+  padding: 1em;
+  font-family: "Marck Script", cursive;
+}
+#main {
+  padding: 2em;
+  text-align: center;
+  font-family: "Kalam", cursive;
+  font-size: 1.4em;
+}
+.col_1,
+.col_2,
+.col_3,
+.col_4 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.row1 {
+  flex-direction: column;
+  align-content: center;
+}
+.row2 {
+  flex-direction: column-reverse;
+  align-content: center;
+}
+.row3 {
+  flex-direction: column;
+  align-content: center;
+}
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  height: 20px;
+  line-height: 20px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+/*Very tiny screens*/
+@media screen and (max-width: 325px) {
+  #nav li {
+    width: 90%;
+  }
+}
+/*smaller screens*/
+@media screen and (min-width: 580px) {
+  #nav {
+    line-height: 50px;
+    height: 50px;
+  }
+  #nav li {
+    background-image: url("../assets/button.png");
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    padding: 0;
+    line-height: 50px;
+    height: 50px;
+    width: 200px;
+    margin: -30px;
+  }
+}
+/*just spacing buttons*/
+@media screen and (min-width: 660px) {
+  #nav li {
+    margin: -20px;
+  }
+}
+/*just spacing buttons*/
+@media screen and (min-width: 860px) {
+  #nav li {
+    margin: 0;
+  }
+}
+/*large screens*/
+@media screen and (min-width: 920px) {
+  .row1 {
+    clear: both;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .row2 {
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row-reverse;
+  }
+  .row3 {
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+  img {
+    padding: 1em;
+    max-width: 100%;
+    min-width: 200px;
+    height: auto;
+  }
+  blockquote {
+    width: 65%;
+    border: 3px double black;
+    border-radius: 10px;
+    padding: 1em;
+    font-family: "Marck Script", cursive;
+  }
+  .col_1 {
+    width: 65%;
+    margin-left: 0;
+    float: left;
+  }
+  .col_2 {
+    width: 30%;
+    float: right;
+  }
+  .col_3 {
+    width: 30%;
+    float: left;
+  }
+  .col_4 {
+    width: 55%;
+    padding-left: 8%;
+  }
+  #nav li {
+    margin-right: 2em;
+    padding: 0;
+    line-height: 50px;
+    height: 50px;
+    width: 200px;
+    background-image: url("../assets/button.png");
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+  }
+  #nav li:hover {
+    background-image: url("../assets/button_mo.png");
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+  }
+}
