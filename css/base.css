@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Kalam|Marck+Script|ZCOOL+KuaiLe");
 html {
-  margin: 0 8.33%;
+  margin: 0;
   padding: 0;
-  background-image: url("../assets/zendoodle-bg.png");
   background-color: lavender;
+  background-image: url("../assets/zendoodle-bg.png");
 }
 body {
-  margin-top: 0;
+  margin: 0 8.33% 0 8.33%;
   padding-top: 0;
   background-image: url("../assets/body-bg.png");
   border: 2px solid black;
